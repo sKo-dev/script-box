@@ -83,6 +83,10 @@ uscr:Button("astolfoHub",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/NBZion/Astolfo-Hub/main/AstolfLoader.lua",true))()
 end)
 
+uscr:Button("animationStealer",function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CenteredSniper/Kenzen/master/AnimationStealer.lua"))()
+end)
+
 local sldrs = serv:Channel("humanoid-test")
 local sldr = sldrs:Slider("WalkSpeed", 16, 300, 16, function(speedwalkspeedwalkbox)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speedwalkspeedwalkbox
@@ -143,6 +147,11 @@ elseif game.PlaceId == 2768379856 then -- scp3008
 	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
+		game:GetService("StarterGui"):SetCore("SendNotification", { 
+			Title = "Notification";
+			Text = "NoFallDamage is enabled";
+			Icon = "rbxthumb://type=Asset&id=8210450482&w=150&h=150"})
+		Duration = 16;
 		local oldnc
 		oldnc = hookmetamethod(game,"__namecall",newcclosure(function(name, ...)
 		      local Args = {...}
