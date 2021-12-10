@@ -96,6 +96,51 @@ local sldr2 = sldrs:Slider("JumpPower", 50, 500, 50, function(jujujumppopwrbox)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = jujujumppopwrbox
 end)
 
+local gmtp = serv:Channel("game-teleport")
+gmtp:Button("kat",function()
+	game:GetService('TeleportService'):Teleport(621129760)
+end)
+
+gmtp:Button("redwoodPrison",function()
+	game:GetService('TeleportService'):Teleport(402122991)
+end)
+
+gmtp:Button("bedwars",function()
+	game:GetService('TeleportService'):Teleport(6872265039)
+end)
+
+gmtp:Button("theStreets",function()
+	game:GetService('TeleportService'):Teleport(455366377)
+end)
+
+gmtp:Button("theStreets",function()
+	game:GetService('TeleportService'):Teleport(455366377)
+end)
+
+gmtp:Button("naturalDisasterSurvival",function()
+	game:GetService('TeleportService'):Teleport(189707)
+end)
+
+gmtp:Button("daHood",function()
+	game:GetService('TeleportService'):Teleport(2788229376)
+end)
+
+gmtp:Button("scp3008",function()
+	game:GetService('TeleportService'):Teleport(2768379856)
+end)
+
+gmtp:Button("funkyFriday",function()
+	game:GetService('TeleportService'):Teleport(6447798030)
+end)
+
+gmtp:Button("funkyFriday",function()
+	game:GetService('TeleportService'):Teleport(6447798030)
+end)
+
+gmtp:Button("grg",function()
+	game:GetService('TeleportService'):Teleport(4598019433)
+end)
+
 --------------------------------------
 local crdts = serv:Channel("credits")
 crdts:Label("Box by Ssonoriko#3916") -- sKo dev <3
@@ -131,7 +176,7 @@ elseif game.PlaceId == 455366377 then -- theStreets
 	alich:Button("Execute", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/SawFuntime/REICON/main/MAIN", true))()
 	end)
-elseif game.PlaceId == 189707 then
+elseif game.PlaceId == 189707 then -- naturalDisasterSurvival
 	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
@@ -176,11 +221,5 @@ elseif game.PlaceId == 4598019433 then -- grg
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/Generic_GUI"))()
-	end)
-elseif game.PlaceId == 12109643 then
-	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
-	local alich = aliserv:Channel("chat")
-	alich:Button("Run", function()
-		loadstring(game:HttpGet("https://gist.githubusercontent.com/lokk1y-dev/7cefd6818a92d1225c1607d30be97d89/raw/cfb8a34fd309397d3d49c94433d812291ecdb5ec/gistfile1.txt",true))()
 	end)
 end
