@@ -56,6 +56,10 @@ gmscr:Button("funkyFriday", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
 end)
 
+gmscr:Button("grg",function() -- new, not fixed
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/Generic_GUI"))()
+end)
+
 local uscr = serv:Channel("universal-scripts")
 
 uscr:Button("homebrew", function()
@@ -157,5 +161,11 @@ elseif game.PlaceId == 6447798030 then -- funkyFriday
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+	end)
+elseif game.PlaceId == 4598019433 then -- grg
+	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
+	local alich = aliserv:Channel("chat")
+	alich:Button("Execute", function()
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/Generic_GUI"))()
 	end)
 end
