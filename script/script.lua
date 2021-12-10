@@ -177,4 +177,10 @@ elseif game.PlaceId == 4598019433 then -- grg
 	alich:Button("Execute", function()
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/Generic_GUI"))()
 	end)
+elseif game.PlaceId == 12109643 then
+	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
+	local alich = aliserv:Channel("chat")
+	alich:Button("Run", function()
+		loadstring(game:HttpGet("https://gist.githubusercontent.com/lokk1y-dev/7cefd6818a92d1225c1607d30be97d89/raw/cfb8a34fd309397d3d49c94433d812291ecdb5ec/gistfile1.txt",true))()
+	end)
 end
