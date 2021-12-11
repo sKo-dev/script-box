@@ -149,6 +149,11 @@ crdts:Label("Box by Ssonoriko#3916") -- sKo dev <3
 crdts:Seperator()
 crdts:Label("UI by dawid#7205")
 crdts:Label("Notification lib by github/BoredStuff2")
+crdts:Seperator()
+crdts:Button("Join sKo-dev discord",function()
+	setclipboard("https://discord.gg/qCyfAHNU9c")
+	notifLib.prompt('Notification', 'Copied to clipboard!', 5)
+end)
 --------------------------------------
 notifLib.prompt('Notification', 'Welcome to ScriptBox hub!', 5)
 ------------------------------------------------------------------------------------------------------------simp-le game detect
