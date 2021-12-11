@@ -1,4 +1,5 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+local notifLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
 
 local win = DiscordLib:Window("Discord")
 
@@ -33,11 +34,7 @@ gmscr:Button("daHood",function()
 end)
 
 gmscr:Button("scp3008",function()
-	game:GetService("StarterGui"):SetCore("SendNotification", { 
-		Title = "Notification";
-		Text = "NoFallDamage is enabled";
-		Icon = "rbxthumb://type=Asset&id=8210450482&w=150&h=150"})
-	Duration = 16;
+	notifLib.prompt('Notification', 'AntiFallDamage now is enabled!', 16)
 	local oldnc
 	oldnc = hookmetamethod(game,"__namecall",newcclosure(function(name, ...)
 	      local Args = {...}
@@ -103,46 +100,47 @@ end)
 local gmtp = serv:Channel("game-teleport")
 gmtp:Button("kat",function()
 	game:GetService('TeleportService'):Teleport(621129760)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
 gmtp:Button("redwoodPrison",function()
 	game:GetService('TeleportService'):Teleport(402122991)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
 gmtp:Button("bedwars",function()
 	game:GetService('TeleportService'):Teleport(6872265039)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
 gmtp:Button("theStreets",function()
 	game:GetService('TeleportService'):Teleport(455366377)
-end)
-
-gmtp:Button("theStreets",function()
-	game:GetService('TeleportService'):Teleport(455366377)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
 gmtp:Button("naturalDisasterSurvival",function()
 	game:GetService('TeleportService'):Teleport(189707)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
 gmtp:Button("daHood",function()
 	game:GetService('TeleportService'):Teleport(2788229376)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
 gmtp:Button("scp3008",function()
 	game:GetService('TeleportService'):Teleport(2768379856)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
 gmtp:Button("funkyFriday",function()
 	game:GetService('TeleportService'):Teleport(6447798030)
-end)
-
-gmtp:Button("funkyFriday",function()
-	game:GetService('TeleportService'):Teleport(6447798030)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
 gmtp:Button("grg",function()
 	game:GetService('TeleportService'):Teleport(4598019433)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
 --------------------------------------
@@ -150,6 +148,9 @@ local crdts = serv:Channel("credits")
 crdts:Label("Box by Ssonoriko#3916") -- sKo dev <3
 crdts:Seperator()
 crdts:Label("UI by dawid#7205")
+crdts:Label("Notification lib by github/BoredStuff2")
+--------------------------------------
+notifLib.prompt('Notification', 'Welcome to ScriptBox hub!', 5)
 ------------------------------------------------------------------------------------------------------------simp-le game detect
 local market = game:GetService("MarketplaceService")
 local isSuc, info = pcall(market.GetProductInfo,market,game.PlaceId)
@@ -196,11 +197,7 @@ elseif game.PlaceId == 2768379856 then -- scp3008
 	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
-		game:GetService("StarterGui"):SetCore("SendNotification", { 
-			Title = "Notification";
-			Text = "NoFallDamage is enabled";
-			Icon = "rbxthumb://type=Asset&id=8210450482&w=150&h=150"})
-		Duration = 16;
+		notifLib.prompt('Notification', 'AntiFallDamage now is enabled!', 16)
 		local oldnc
 		oldnc = hookmetamethod(game,"__namecall",newcclosure(function(name, ...)
 		      local Args = {...}
