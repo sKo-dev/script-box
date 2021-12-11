@@ -61,10 +61,6 @@ gmscr:Button("jailbreak",function()
 	loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
 end)
 
-gmscr:Button("petSimulatorX",function()
-	loadstring(game:GetObjects("rbxassetid://8194485654")[1].Source)("Petsi-X")
-end)
-
 gmscr:Button("island",function()
 	loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
 end)
@@ -164,11 +160,6 @@ gmtp:Button("jailbreak",function()
 	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
-gmtp:Button("petSimulatorX",function()
-	game:GetService('TeleportService'):Teleport(6284583030)
-	notifLib.prompt('Notification', 'Teleporting!', 5)
-end)
-
 gmtp:Button("island",function()
 	game:GetService('TeleportService'):Teleport(4872321990)
 	notifLib.prompt('Notification', 'Teleporting!', 5)
@@ -264,12 +255,6 @@ elseif game.PlaceId == 606849621 then -- jailbreak
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
 		loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
-	end)
-elseif game.PlaceId == 6284583030 then -- petSimulatorX
-	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
-	local alich = aliserv:Channel("chat")
-	alich:Button("Execute", function()
-		loadstring(game:GetObjects("rbxassetid://8194485654")[1].Source)("Petsi-X")
 	end)
 elseif game.PlaceId == 4872321990 then -- island
 	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
