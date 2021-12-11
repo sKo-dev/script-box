@@ -87,6 +87,10 @@ uscr:Button("animationStealer",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/CenteredSniper/Kenzen/master/AnimationStealer.lua"))()
 end)
 
+uscr:Button("serverBrowser",function()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/lokk1y-dev/e0a3d0de1af3f607887c7ad1902c8927/raw/fb86847e5b3e6c5e0ec7a972014d150e8d59689e/gistfile1.txt", true))();
+end)
+
 local sldrs = serv:Channel("humanoid-test")
 local sldr = sldrs:Slider("WalkSpeed", 16, 300, 16, function(speedwalkspeedwalkbox)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speedwalkspeedwalkbox
