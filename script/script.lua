@@ -65,6 +65,10 @@ gmscr:Button("island",function()
 	loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
 end)
 
+gmscr:Button("petSimulatorX",function()
+	loadstring(game:HttpGet("https://schervi.wtf/ImpactXBeta.lua",true))()
+end)
+
 local uscr = serv:Channel("universal-scripts")
 
 uscr:Button("homebrew", function()
@@ -165,6 +169,11 @@ gmtp:Button("island",function()
 	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
+gmtp:Button("petSimulatorX",function()
+	game:GetService('TeleportService'):Teleport(6284583030)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
+end)
+
 --------------------------------------
 local crdts = serv:Channel("credits")
 crdts:Label("Box by Ssonoriko#3916") -- sKo dev <3
@@ -261,5 +270,11 @@ elseif game.PlaceId == 4872321990 then -- island
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
 		 loadstring(game:HttpGet("http://void-scripts.com/Scripts/islands_new.lua"))()
+	end)
+elseif game.PlaceId == 6284583030 then -- petSimX
+	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
+	local alich = aliserv:Channel("chat")
+	alich:Button("Execute", function()
+		loadstring(game:HttpGet("https://schervi.wtf/ImpactXBeta.lua"))()
 	end)
 end
