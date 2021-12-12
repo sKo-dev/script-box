@@ -69,6 +69,10 @@ gmscr:Button("petSimulatorX",function()
 	loadstring(game:HttpGet("https://schervi.wtf/ImpactXBeta.lua",true))()
 end)
 
+gmscr:Button("ragdollEngine",function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua',true))()
+end)
+
 local uscr = serv:Channel("universal-scripts")
 
 uscr:Button("homebrew", function()
@@ -174,6 +178,11 @@ gmtp:Button("petSimulatorX",function()
 	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
+gmtp:Button("ragdollEngine",function()
+	game:GetService('TeleportService'):Teleport(7049683699)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
+end)
+
 --------------------------------------
 local crdts = serv:Channel("credits")
 crdts:Label("Box by Ssonoriko#3916") -- sKo dev <3
@@ -275,6 +284,12 @@ elseif game.PlaceId == 6284583030 then -- petSimX
 	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
-		loadstring(game:HttpGet("https://schervi.wtf/ImpactXBeta.lua"))()
+		loadstring(game:HttpGet("https://schervi.wtf/ImpactXBeta.lua",true))()
+	end)
+elseif game.PlaceId == 7049683699 then -- ragdollEngine
+	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
+	local alich = aliserv:Channel("chat")
+	alich:Button("Execute", function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua',true))()
 	end)
 end
