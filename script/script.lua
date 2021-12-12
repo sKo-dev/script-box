@@ -73,6 +73,10 @@ gmscr:Button("ragdollEngine",function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua',true))()
 end)
 
+gmscr:Button("bloodEngine",function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/catboy08/nil/scripts/gamez/blood-engine.lua",true))()
+end)
+
 local uscr = serv:Channel("universal-scripts")
 
 uscr:Button("homebrew", function()
@@ -106,6 +110,10 @@ end)
 
 uscr:Button("ezHub",function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+
+uscr:Button("chetBypasser",function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/bedra45/chetbypasser/main/chetbypass'))()
 end)
 
 local sldrs = serv:Channel("humanoid-test")
@@ -180,6 +188,11 @@ end)
 
 gmtp:Button("ragdollEngine",function()
 	game:GetService('TeleportService'):Teleport(7049683699)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
+end)
+
+gmtp:Button("bloodEngine",function()
+	game:GetService('TeleportService'):Teleport(7199972186)
 	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
@@ -291,5 +304,11 @@ elseif game.PlaceId == 7049683699 then -- ragdollEngine
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua',true))()
+	end)
+elseif game.PlaceId == 7199972186 then -- bloodEngine
+	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
+	local alich = aliserv:Channel("chat")
+	alich:Button("Execute", function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/catboy08/nil/scripts/gamez/blood-engine.lua",true))()
 	end)
 end
