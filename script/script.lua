@@ -1,5 +1,5 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
-local notifLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/BoredStuff2/notify-lib/main/lib'),true))()
+local notifLib = loadstring(game:HttpGet(('https://gist.githubusercontent.com/lokk1y-dev/adbd2be45ba69c4ce71a39bcb4b8899a/raw/ba019dbd5bce2ff69053b8294e3cb1d32ec05e80/gistfile1.txt'),true))() -- dont use print, you in credits >:(
 
 local win = DiscordLib:Window("Discord")
 
@@ -77,6 +77,14 @@ gmscr:Button("bloodEngine",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/catboy08/nil/scripts/gamez/blood-engine.lua",true))()
 end)
 
+gmscr:Button("bloodfest",function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/BK443fsJ", true))()
+end)
+
+gmscr:Button("towerOfHell",function()
+	loadstring(game:HttpGet("https://paste.c-net.org/MoppingOptimist", true))()
+end)
+
 local uscr = serv:Channel("universal-scripts")
 
 uscr:Button("homebrew", function()
@@ -112,8 +120,12 @@ uscr:Button("ezHub",function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
 end)
 
-uscr:Button("chetBypasser",function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/bedra45/chetbypasser/main/chetbypass'))()
+uscr:Button("customChat",function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Roblox-Loadstring/Loadstrings/3186ac6371a2fd6c4c56090695d11043ca499b70/Custom-chat",true))()
+end)
+
+uscr:Button("hitboxExpander",function()
+	loadstring(game:HttpGet("http://gameovers.net/Scripts/Free/HitboxExpander/main.lua", true))()
 end)
 
 local sldrs = serv:Channel("humanoid-test")
@@ -123,6 +135,18 @@ end)
 
 local sldr2 = sldrs:Slider("JumpPower", 50, 500, 50, function(jujujumppopwrbox)
 	game.Players.LocalPlayer.Character.Humanoid.JumpPower = jujujumppopwrbox
+end)
+
+sldrs:Seperator()
+
+sldrs:Button("Copy JobID",function()
+	setclipboard(game.JobId)
+	notifLib.prompt("Notification", "Copied!", 5)
+end)
+
+sldrs:Button("Copy GameID",function()
+	setclipboard(PlaceId)
+	notifLib.prompt('Notification', 'Copied!', 5)
 end)
 
 local gmtp = serv:Channel("game-teleport")
@@ -193,6 +217,16 @@ end)
 
 gmtp:Button("bloodEngine",function()
 	game:GetService('TeleportService'):Teleport(7199972186)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
+end)
+
+gmtp:Button("bloodfest",function()
+	game:GetService('TeleportService'):Teleport(48994649)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
+end)
+
+gmtp:Button("towerOfHell",function()
+	game:GetService('TeleportService'):Teleport(1962086868)
 	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
@@ -310,5 +344,17 @@ elseif game.PlaceId == 7199972186 then -- bloodEngine
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/catboy08/nil/scripts/gamez/blood-engine.lua",true))()
+	end)
+elseif game.PlaceId == 48994649 then -- bloodfest
+	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
+	local alich = aliserv:Channel("chat")
+	alich:Button("Execute", function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/BK443fsJ", true))()
+	end)
+elseif game.PlaceId == 1962086868 then -- tOH
+	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
+	local alich = aliserv:Channel("chat")
+	alich:Button("Execute", function()
+		loadstring(game:HttpGet("https://paste.c-net.org/MoppingOptimist", true))()
 	end)
 end
