@@ -85,6 +85,10 @@ gmscr:Button("towerOfHell",function()
 	loadstring(game:HttpGet("https://paste.c-net.org/MoppingOptimist", true))()
 end)
 
+gmscr:Button("funkyFridaySongBlocker",function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/FunkyFriday_Blocker", true))()
+end)
+
 local uscr = serv:Channel("universal-scripts")
 
 uscr:Button("homebrew", function()
@@ -126,6 +130,10 @@ end)
 
 uscr:Button("hitboxExpander",function()
 	loadstring(game:HttpGet("http://gameovers.net/Scripts/Free/HitboxExpander/main.lua", true))()
+end)
+
+uscr:Button("cocoZ",function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/CocoHub/master/CocoZHub'),true))()
 end)
 
 local sldrs = serv:Channel("humanoid-test")
