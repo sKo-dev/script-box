@@ -1,5 +1,5 @@
 local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
-local notifLib = loadstring(game:HttpGet(('https://gist.githubusercontent.com/lokk1y-dev/adbd2be45ba69c4ce71a39bcb4b8899a/raw/ba019dbd5bce2ff69053b8294e3cb1d32ec05e80/gistfile1.txt'),true))() -- dont use print, you in credits >:(
+local notifLib = loadstring(game:HttpGet(('https://gist.githubusercontent.com/lokk1y-dev/adbd2be45ba69c4ce71a39bcb4b8899a/raw/c1041fd9cff9b4e1ae5fdf619ef6582592d1a6f4/notifLib.lua'),true))() -- dont use print, you in credits >:(
 
 local win = DiscordLib:Window("Discord")
 
@@ -30,7 +30,7 @@ gmscr:Button("naturalDisasterSurvival",function()
 end)
 
 gmscr:Button("daHood",function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Roblox-Loadstring/Loadstrings/main/zellhub'),true))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxHackerProLuaStuff/zellhubnew/main/SCRIPTPRO.lua"))()
 end)
 
 gmscr:Button("scp3008",function()
