@@ -30,7 +30,7 @@ gmscr:Button("naturalDisasterSurvival",function()
 end)
 
 gmscr:Button("daHood",function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RobloxHackerProLuaStuff/zellhubnew/main/SCRIPTPRO.lua"))()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/lokk1y-dev/386ada85300396db2df0339379b74f73/raw/b579040ffa7a37a3cb744a5f7b8e4d6eb0821468/zellhub.lua",true))()
 end)
 
 gmscr:Button("scp3008",function()
@@ -89,6 +89,14 @@ gmscr:Button("funkyFridaySongBlocker",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/FunkyFriday_Blocker", true))()
 end)
 
+gmscr:Button("phantomForces",function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/BRM5/SilentAim.lua"))()
+end)
+
+gmscr:Button("vansWorld",function()
+	loadstring(game:GetObjects("rbxassetid://8245761742")[1].Source)("Pepsis World")
+end)
+
 local uscr = serv:Channel("universal-scripts")
 
 uscr:Button("homebrew", function()
@@ -134,6 +142,10 @@ end)
 
 uscr:Button("cocoZ",function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/CocoHub/master/CocoZHub'),true))()
+end)
+
+uscr:Button("githubViewer",function()
+	loadstring(game:HttpGet('https://gist.githubusercontent.com/lokk1y-dev/afbed8e603088389554d658b4f3fcf9a/raw/a2fbda7617638bfcfea2f7a02f295a52b2b6e900/githubViewer.lua',true))()
 end)
 
 local sldrs = serv:Channel("humanoid-test")
