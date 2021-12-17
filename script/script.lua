@@ -144,6 +144,10 @@ uscr:Button("githubViewer",function()
 	loadstring(game:HttpGet('https://gist.githubusercontent.com/lokk1y-dev/afbed8e603088389554d658b4f3fcf9a/raw/a2fbda7617638bfcfea2f7a02f295a52b2b6e900/githubViewer.lua',true))()
 end)
 
+uscr:Button("remoteSpy",function()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/lokk1y-dev/082ca6d7ac3c7ccca9c3c43d0d7a3cf7/raw/657db5f15c27d599dec136a8b778c8b619956892/antiDumbRSpy.lua", true))()
+end)
+
 local sldrs = serv:Channel("humanoid-test")
 local sldr = sldrs:Slider("WalkSpeed", 16, 300, 16, function(speedwalkspeedwalkbox)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = speedwalkspeedwalkbox
