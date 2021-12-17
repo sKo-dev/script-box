@@ -29,9 +29,9 @@ gmscr:Button("naturalDisasterSurvival",function()
 	loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/7c75386107937fa006304efd24543ad4/raw/8d759dfcd95d39949c692735cfdf62baec0bf835/cafwetweg", true))()
 end)
 
-gmscr:Button("daHood",function()
+--[[gmscr:Button("daHood",function()
 	loadstring(game:HttpGet("https://gist.githubusercontent.com/lokk1y-dev/386ada85300396db2df0339379b74f73/raw/b579040ffa7a37a3cb744a5f7b8e4d6eb0821468/zellhub.lua",true))()
-end)
+end)]]--cant work
 
 gmscr:Button("scp3008",function()
 	notifLib.prompt('Notification', 'AntiFallDamage now is enabled!', 16)
@@ -89,10 +89,6 @@ gmscr:Button("funkyFridaySongBlocker",function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/FunkyFriday_Blocker", true))()
 end)
 
-gmscr:Button("phantomForces",function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/AlexR32/Roblox/main/BRM5/SilentAim.lua"))()
-end)
-
 gmscr:Button("vansWorld",function()
 	loadstring(game:GetObjects("rbxassetid://8245761742")[1].Source)("Pepsis World")
 end)
@@ -140,8 +136,8 @@ uscr:Button("hitboxExpander",function()
 	loadstring(game:HttpGet("http://gameovers.net/Scripts/Free/HitboxExpander/main.lua", true))()
 end)
 
-uscr:Button("cocoZ",function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/CocoHub/master/CocoZHub'),true))()
+uscr:Button("streamSniper",function()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/lokk1y-dev/df1048468a3cf2daaa2244a65fd9b7cb/raw/b4b9e27392967b531be698e3f91780e97dcd6264/streamSniper.lua",true))()
 end)
 
 uscr:Button("githubViewer",function()
@@ -247,6 +243,11 @@ end)
 
 gmtp:Button("towerOfHell",function()
 	game:GetService('TeleportService'):Teleport(1962086868)
+	notifLib.prompt('Notification', 'Teleporting!', 5)
+end)
+
+gmtp:Button("vansWorld",function()
+	game:GetService('TeleportService'):Teleport(6679274937)
 	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
@@ -376,5 +377,11 @@ elseif game.PlaceId == 1962086868 then -- tOH
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
 		loadstring(game:HttpGet("https://paste.c-net.org/MoppingOptimist", true))()
+	end)
+elseif game.PlaceId == 6679274937 then -- vansWorld
+	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
+	local alich = aliserv:Channel("chat")
+	alich:Button("Execute", function()
+		loadstring(game:GetObjects("rbxassetid://8245761742")[1].Source)("Pepsis World")
 	end)
 end
