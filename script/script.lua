@@ -195,11 +195,6 @@ gmtp:Button("naturalDisasterSurvival",function()
 	notifLib.prompt('Notification', 'Teleporting!', 5)
 end)
 
-gmtp:Button("daHood",function()
-	game:GetService('TeleportService'):Teleport(2788229376)
-	notifLib.prompt('Notification', 'Teleporting!', 5)
-end)
-
 gmtp:Button("scp3008",function()
 	game:GetService('TeleportService'):Teleport(2768379856)
 	notifLib.prompt('Notification', 'Teleporting!', 5)
@@ -303,12 +298,6 @@ elseif game.PlaceId == 189707 then -- naturalDisasterSurvival
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
 		loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/7c75386107937fa006304efd24543ad4/raw/8d759dfcd95d39949c692735cfdf62baec0bf835/cafwetweg", true))()
-	end)
-elseif game.PlaceId == 2788229376 then -- daHood
-	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
-	local alich = aliserv:Channel("chat")
-	alich:Button("Execute", function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Roblox-Loadstring/Loadstrings/main/zellhub'),true))()
 	end)
 elseif game.PlaceId == 2768379856 then -- scp3008
 	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
