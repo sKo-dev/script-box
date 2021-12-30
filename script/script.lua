@@ -93,6 +93,10 @@ gmscr:Button("vansWorld",function()
 	loadstring(game:GetObjects("rbxassetid://8245761742")[1].Source)("Pepsis World")
 end)
 
+gmscr:Button("electricState", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/zpbFNRTW",true))()
+end)
+
 local uscr = serv:Channel("universal-scripts")
 
 uscr:Button("homebrew", function()
@@ -146,6 +150,14 @@ end)
 
 uscr:Button("remoteSpy",function()
 	loadstring(game:HttpGet("https://gist.githubusercontent.com/lokk1y-dev/082ca6d7ac3c7ccca9c3c43d0d7a3cf7/raw/657db5f15c27d599dec136a8b778c8b619956892/antiDumbRSpy.lua", true))()
+end)
+
+uscr:Button("c00lgui",function()
+	loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+end)
+
+uscr:Button("brainPain",function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/sKo-dev/brainpain/main/source.lua",true))()
 end)
 
 local sldrs = serv:Channel("humanoid-test")
@@ -376,5 +388,11 @@ elseif game.PlaceId == 6679274937 then -- vansWorld
 	local alich = aliserv:Channel("chat")
 	alich:Button("Execute", function()
 		loadstring(game:GetObjects("rbxassetid://8245761742")[1].Source)("Pepsis World")
+	end)
+elseif game.PlaceId == 2262441883 then -- electricState
+	local aliserv = win:Server("Alien", "http://www.roblox.com/asset/?id=7761239221")
+	local alich = aliserv:Channel("chat")
+	alich:Button("Execute", function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/zpbFNRTW",true))()
 	end)
 end
